@@ -1,0 +1,5 @@
+projects:
+  - name: my-dev
+    dir: .
+    opentofu: false
+    terraform: true
