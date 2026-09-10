@@ -38,3 +38,11 @@ variable "required_status_checks" {
   default     = []
   sensitive   = false
 }
+
+variable "source_template" {
+  type        = string
+  description = "Source of template to create the repo from"
+  default     = null
+  nullable    = true
+  sensitive   = false
+}

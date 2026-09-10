@@ -23,6 +23,13 @@ resource "github_repository" "repo" {
   has_discussions        = true
   homepage_url           = var.homepage_url
   is_template            = var.is_template
+  dynamic "template" {
+    for_each = var.source_template != null ? [var.source_template] : []
+    content {
+      owner      = "messaging-go"
+      repository = template.value
+    }
+  }
 }
 
 resource "github_branch_default" "default_branch" {
