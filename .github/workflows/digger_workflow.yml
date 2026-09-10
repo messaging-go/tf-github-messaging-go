@@ -35,5 +35,5 @@ jobs:
           setup-aws: false
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          TF_VAR_GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TF_VAR_GH_TOKEN: ${{ secrets.GH_TOKEN }}
