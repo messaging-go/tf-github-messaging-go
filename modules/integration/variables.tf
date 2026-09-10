@@ -16,33 +16,9 @@ variable "topics" {
   sensitive   = false
 }
 
-
-variable "homepage_url" {
-  type        = string
-  description = "The homepage URL to set"
-  default     = null
-  nullable    = true
-  sensitive   = false
-}
-
-variable "is_template" {
-  type        = bool
-  description = "Create the repository as a template repository"
-  default     = false
-  sensitive   = false
-}
-
 variable "required_status_checks" {
   type        = list(string)
   description = "The status checks to enforce to merge on to the default branch"
   default     = []
-  sensitive   = false
-}
-
-variable "source_template" {
-  type        = string
-  description = "Source of template to create the repo from"
-  default     = null
-  nullable    = true
   sensitive   = false
 }
