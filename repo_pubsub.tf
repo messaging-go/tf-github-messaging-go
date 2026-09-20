@@ -1,6 +1,6 @@
 module "repository_pubsub" {
   source      = "./modules/integration"
   name        = "pubsub"
-  description = "A compatiable integration for version 2 of google pubsub"
+  description = "A pubsub v2 integration for messaging-go"
   topics      = ["google", "pubsub", "gcloud", "gcp"]
 }
